@@ -1,0 +1,490 @@
+{
+	"info": {
+		"_postman_id": "53c67ad6-35a1-4cce-a8f5-8be96a098a78",
+		"name": "Innova-validation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "aaa123",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "22b69c0c-a78f-4ea2-a3f1-24cc51cbffe9",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.message).to.eql(\"OK\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"aaa123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "abcab123",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "25b4a422-c5df-4310-b64d-a4c7ac2a149f",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.message).to.eql(\"OK\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"abcab123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1abc2abc",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0922a5a0-812e-4f8e-bac0-92b4e6526b28",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.message).to.eql(\"OK\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"1abc2abc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "abcab122123",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e236b223-a583-42c0-8e2b-c2b1ca89016e",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.message).to.eql(\"OK\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"abcab122123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bbbabbbc123",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "35c74280-82d6-4def-b7c0-5307e7d24da5",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.message).to.eql(\"OK\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"bbbabbbc123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "abab123",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bff6af24-1be8-4337-9d3b-49d12e107fca",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.errMessage).to.eql(\"the password must not contain any sequence of characters immediately followed by the same sequence.\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"abab123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ab12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "84e08b4c-e2a0-434e-9b2f-5b013d94bce8",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.errMessage).to.eql(\"the password must be between 5 and 12 characters in length\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"ab12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "345baabaaa678",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e3d51abd-32d9-4b60-aece-329ed131f237",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.errMessage).to.eql(\"the password must be between 5 and 12 characters in length\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"345baabaaa678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "abcde",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "abff975d-b528-4890-9b63-e6d647c1c6ad",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.errMessage).to.eql(\"the password consists of a mixture of lowercase letters and numerical digits only, with at least one of each\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"abcde\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12345",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e81734cf-20b6-4871-a69b-cc84073783a1",
+						"exec": [
+							"pm.test(\"http status check\", () => {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"response check\", () => {",
+							"    const responseJson = pm.response.json();",
+							"    pm.expect(responseJson.errMessage).to.eql(\"the password consists of a mixture of lowercase letters and numerical digits only, with at least one of each\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/validation/password",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"validation",
+						"password"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
