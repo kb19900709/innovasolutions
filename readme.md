@@ -26,9 +26,9 @@
    3. build the docker image
    4. run the image
 5. You can continuously execute the above shell, it'll automatically delete the old one.
-6. If you have postman([collection runner](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/)) or [newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/) in your device, import **Innova-validation.postman_collection.json** and run it. Note that the test is running with `localhost:8080`, so if you change the port while running **buildAndRun.sh**, please test it manually.
+6. If you have postman([collection runner](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/)) or [newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/) in your device, import **Innova-validation.postman_collection.json** and run it on postman collection runner or execute `newman run Innova-validation.postman_collection.json`. Note that the test is running with `localhost:8080`, so if you change the port while running **buildAndRun.sh**, please test it manually.
 
-## spec
+## Specification
 HTTP method | Host      |Port|Path                |Body                      |
 ------------| ----------|----|--------------------|--------------------------|
 POST        | localhost |8080|validation/password |{"password":"password123"}|
@@ -40,3 +40,28 @@ curl --location --request POST 'localhost:8080/validation/password' \
 	"password":"password123"
 }'
 ```
+
+## Test Case
+You can see the following data in [ValidationControllerTest](https://github.com/kb19900709/innovasolutions/blob/master/src/test/java/com/innova/controller/ValidationControllerTest.java) for integration test.
+
+password      | valid
+--------------|---------
+aaa123        | O
+abcab123      | O
+1abc2abc      | O
+abcab122123   | O
+bbbabbbc123   | O 
+abab123       | X
+abcab122122   | X
+345aabaab678  | X
+345baabaaa678 | X
+aabbaabb123   | X
+aaaaaa123 	  | X	
+aaaa123       | X
+123aaaaaa     | X
+123aaaa       | X
+ab12		  | X
+ab12bc12cc12d | X
+abcde         | X
+12345         | X
+11abcabc11    | X
